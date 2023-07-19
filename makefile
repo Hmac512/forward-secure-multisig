@@ -3,10 +3,10 @@ help:
 	@echo "Setup forward secure signatures"
 	@echo ""
 	@echo	"Usage:"
-	@echo "make build:                                    --- initalizes and builds"
-	@echo "make clean:                                    --- cleans build"
-	@echo "make test:                                     --- run unit tests"
-	@echo "make benchmark:                                --- run unit tests w/ timer"
+	@echo "make build:                        --- initalizes and builds"
+	@echo "make clean:                        --- cleans build"
+	@echo "make test:                         --- run unit tests"
+	@echo "make benchmark:                    --- run unit tests w/ timer"
 
 .PHONY: build
 build:
