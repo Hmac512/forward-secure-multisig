@@ -1,0 +1,24 @@
+[package]
+name = "forward-secure-sig"
+version = "0.0.1"
+edition = "2018"
+description = "Forward secure Multi-signatures"
+
+[dependencies]
+rand = "0.7"
+#error-chain = "0.11.0"
+failure = "0.1.5"
+serde = "1.0"
+serde_derive = "1.0"
+secret_sharing = "0.2"
+
+[dependencies.amcl_wrapper]
+version = "0.3"
+#path = "../amcl_wrapper/"
+default-features = false
+features = ["bls381"]
+
+[features]
+default = ["VerkeyG2"]
+VerkeyG2 = []    # Verification key is in G2 and all but one element of signature are in G1
+VerkeyG1 = []    # Verification key is in G1 and all but one element of signature are in G2
